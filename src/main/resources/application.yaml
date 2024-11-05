@@ -1,0 +1,18 @@
+jwt:
+  secret: sadfhekhkegfgeufeagfjkhdjkfegfkgfkagehgfhafagfjgejfeafkhaefsdsafetr
+server:
+  port: ${server.port}
+spring:
+  datasource:
+    url: ${spring.datasource.url}
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+  jpa:
+    hibernate:
+      dialect: ${spring.jpa.hibernate.dialect}
+      ddl-auto: update
+    show-sql: true
+logging:
+  org:
+    hibernate:
+      SQL: DEBUG
